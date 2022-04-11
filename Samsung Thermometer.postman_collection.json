@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "9c58050e-ac45-4a6b-8492-1ef138a1ff96",
+		"name": "Samsung Thermometer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getTemperatureType",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getTemperatureType/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getTemperatureType",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postTemperatureMonitory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\":\"CELSIUS\",\r\n    \"temperatureMonitory\":\"10.0\",\r\n    \"temperatureMonitoryRangeFrom\":\"5.0\",\r\n    \"temperatureMonitoryRangeTo\":\"20.0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/postTemperatureMonitory",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postTemperatureMonitory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTemperature",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getTemperature/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getTemperature",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
